@@ -65,3 +65,5 @@ Non-debugging symbols:
    - **Writable Memory**: Exploiting writable sections like the GOT and buffer overflows allows you to gain control over the program’s flow.
 
 You successfully exploited the vulnerability, overwrote the GOT entry, and gained access to the shell to move on to `level6`. This is a classic example of leveraging a format string vulnerability and manipulating memory to execute arbitrary code.
+
+
