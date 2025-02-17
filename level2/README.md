@@ -473,7 +473,7 @@ This shellcode is designed to **spawn a shell** (`/bin/sh`) on a Linux system, t
 pattern generating 
 
 ``` bash 
-python -c 'print "a" * 76' > /tmp/pattern.txt
+python -c 'print "a" * 84' > /tmp/pattern.txt
 Now run the program in GDB with the generated input:
 
 (gdb) r < /tmp/pattern.txt

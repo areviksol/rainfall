@@ -80,9 +80,15 @@ This is typically done to escalate privileges (e.g., to root) if the binary is r
 ```asm
 0x08048f4a <+138>:   movl   $0x80c5348,(%esp)
 0x08048f51 <+145>:   call   0x8054640 <execv>
+
+
 ```
 
 - **`movl $0x80c5348, (%esp)`**: Prepares the hardcoded command.
+``` bash
+(gdb) x/s 0x80c5348
+0x80c5348:       "/bin/sh"
+```
 - **`call <execv>`**: Executes the command, replacing the current process image.
 
 ---

@@ -1,3 +1,4 @@
+The program wait an input and quit after press enter
 
 ### 1. Understand what level1 binary do
 
@@ -150,7 +151,7 @@ Next, find the address of the `run()` function:
 (gdb) disas run
 ```
 
-Note down the address of `run()`. For example, assume the address is `0x08048444`.
+Note down the address of `run()`, the address is `0x08048444`.
 
 ### 3. Find the Offset for Buffer Overflow
 
@@ -187,7 +188,7 @@ The exploit consists of:
 - **76 bytes of padding** (to fill the buffer).
 - **The address of the `run()` function**, written in little-endian format.
 
-Assume the address of `run()` is `0x08048444`. In little-endian format, this becomes `\x44\x84\x04\x08`.
+the address of `run()` is `0x08048444`. In little-endian format, this becomes `\x44\x84\x04\x08`.
 
 Create the exploit:
 

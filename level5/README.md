@@ -51,7 +51,7 @@ Non-debugging symbols:
     cat /home/user/level6/.pass
     d3b7bf1025225bd715fa8ccb54ef06ca70b9125ac855aeab4878217177f41a31
     ^C
-    level5@RainFall:~$ su level
+    level5@RainFall:~$ su level6
     ```
 
      This shows that you successfully switched to `level6` by executing the format string attack.
@@ -64,6 +64,6 @@ Non-debugging symbols:
    - **Global Offset Table (GOT)**: This table holds addresses of dynamically linked functions. By overwriting an entry in the GOT, you can change the function that gets called, leading to arbitrary code execution.
    - **Writable Memory**: Exploiting writable sections like the GOT and buffer overflows allows you to gain control over the program’s flow.
 
-You successfully exploited the vulnerability, overwrote the GOT entry, and gained access to the shell to move on to `level6`. This is a classic example of leveraging a format string vulnerability and manipulating memory to execute arbitrary code.
+successfully exploited the vulnerability, overwrote the GOT entry, and gained access to the shell to move on to `level6`. This is a classic example of leveraging a format string vulnerability and manipulating memory to execute arbitrary code.
 
 

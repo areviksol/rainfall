@@ -50,11 +50,3 @@ int main(void) {
 
     return 0;
 }
-
-/* 
-
-auth 
-service aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-login
-
- */
